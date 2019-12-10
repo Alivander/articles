@@ -1,10 +1,7 @@
-const COUNT_PATTERNS = 10;
+const COUNT_PATTERNS = 30;
 
 const table = document.querySelector('.table');
-const fragment = document.createDocumentFragment();
-
-// TODO
-// used html-templates
+const template = document.querySelector('template').content;
 
 const patternsList = Array(COUNT_PATTERNS).fill()
     .map((node, index) => createCell(index));
@@ -12,19 +9,13 @@ const patternsList = Array(COUNT_PATTERNS).fill()
 table.append(...patternsList);
 
 function createCell(index) {
-    const cell = document.createElement('div');
-    const cellTitle = document.createElement('p');
-    const field = document.createElement('div');
-    const pattern = document.createElement('div');
+    const cell = template.cloneNode(true);
+    const cellTitle = cell.querySelector('.cell__title');
+    const pattern = cell.querySelector('.pattern');
+    const currentNumber = index + 1;
 
-    cell.classList.add('cell');
-    cellTitle.classList.add('cell__title');
-    field.classList.add('field');
-    pattern.classList.add(`pattern_${ index + 1 }`);
-    cellTitle.innerText = `pattern ${ index + 1 }`
-    field.appendChild(pattern);
-    cell.appendChild(cellTitle);
-    cell.appendChild(field);
+    pattern.classList.add(`pattern_${ currentNumber }`);
+    cellTitle.innerText = `pattern ${ currentNumber }`
 
     return cell;
 }

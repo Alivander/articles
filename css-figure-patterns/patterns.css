@@ -1,18 +1,241 @@
 .pattern_1 {
     width: 100px;
     height: 100px;
-    background-color: var(--fill);
+    background-color: var(--fill-color);
 }
+
+/* ---------------------------------------- */
 
 .pattern_2 {
     width: 120px;
     height: 60px;
-    background-color: var(--fill);
+    background-color: var(--fill-color);
 }
 
+/* ---------------------------------------- */
+
 .pattern_3 {
-    width: 60px;
-    height: 60px;
-    background-color: var(--fill);
+    width: 70px;
+    height: 70px;
+    background-color: var(--fill-color);
     transform: rotate(45deg);
+}
+
+/* ---------------------------------------- */
+
+.pattern_4 {
+    width: 40px;
+    height: 40px;
+    background-color: var(--fill-color);
+    transform: scaleY(2) rotate(45deg);
+}
+
+/* ---------------------------------------- */
+
+.pattern_5 {
+    width: 50px;
+    height: 80px;
+    background-color: var(--fill-color);
+    transform: skewX(-20deg);
+}
+
+/* ---------------------------------------- */
+
+.pattern_6 {
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to top, transparent 40%, var(--fill-color) 40% 60%, transparent 60%);
+}
+
+/* ---------------------------------------- */
+
+.pattern_7 {
+    width: 100px;
+    height: 100px;
+    background-image:
+        linear-gradient(to right, transparent 40%, var(--fill-color) 40% 60%, transparent 60%),
+        linear-gradient(to top, transparent 40%, var(--fill-color) 40% 60%, transparent 60%);
+}
+
+/* ---------------------------------------- */
+
+.pattern_8 {
+    width: 100px;
+    height: 100px;
+    background-image:
+        linear-gradient(to right, transparent 40%, var(--fill-color) 40% 60%, transparent 60%),
+        linear-gradient(to top, transparent 40%, var(--fill-color) 40% 60%, transparent 60%);
+    transform: rotate(45deg);
+}
+
+/* ---------------------------------------- */
+
+.pattern_9 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to top, transparent 40%, var(--fill-color) 40% 60%, transparent 60%);
+}
+
+.pattern_9::before,
+.pattern_9::after {
+    position: absolute;
+    left: 40%;
+    display: block;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: var(--fill-color);
+    content: '';
+}
+
+.pattern_9::after {
+    bottom: 0;
+}
+
+/* ---------------------------------------- */
+
+.pattern_10 {
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(
+        to top,
+        transparent 20%,
+        var(--fill-color) 20% 40%,
+        transparent 40% 60%,
+        var(--fill-color) 60% 80%,
+        transparent 80%
+    );
+}
+
+/* ---------------------------------------- */
+
+.pattern_11 {
+    position: relative;
+    width: 14px;
+    height: 100px;
+    background-color: var(--fill-color);
+}
+
+.pattern_11::before,
+.pattern_11::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fill-color);
+    content: '';
+}
+
+.pattern_11::before {
+    transform: rotate(60deg);
+}
+
+.pattern_11::after {
+    transform: rotate(-60deg);
+}
+
+/* ---------------------------------------- */
+
+.pattern_12 {
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(
+        to top,
+        transparent 15%,
+        var(--fill-color) 15% 29%,
+        transparent 29% 43%,
+        var(--fill-color) 43% 57%,
+        transparent 57% 71%,
+        var(--fill-color) 71% 85%,
+        transparent 85%
+    );
+}
+
+/* ---------------------------------------- */
+
+.pattern_13 {
+    width: 100px;
+    height: 100px;
+    background-image:
+        linear-gradient(
+            to top,
+            transparent 23%,
+            var(--fill-color) 23% 37%,
+            transparent 37% 63%,
+            var(--fill-color) 63% 77%,
+            transparent 77%
+        ),
+        linear-gradient(
+            to right,
+            transparent 23%,
+            var(--fill-color) 23% 37%,
+            transparent 37% 63%,
+            var(--fill-color) 63% 77%,
+            transparent 77%
+        );
+    transform: skewX(-10deg);
+}
+
+/* ---------------------------------------- */
+
+.pattern_14 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(-50deg, transparent 45%, var(--fill-color) 45% 54%, transparent 54%);
+}
+
+.pattern_14::before,
+.pattern_14::after {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 10px solid var(--fill-color);
+    border-radius: 50%;
+    content: '';
+}
+
+.pattern_14::after {
+    right: 0;
+    bottom: 0;
+}
+
+/* ---------------------------------------- */
+
+.pattern_15 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to right, transparent 45%, var(--fill-color) 45% 55%, transparent 55%);
+}
+
+.pattern_15::before,
+.pattern_15::after {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    left: 25px;
+    border: 10px solid var(--fill-color);
+    border-radius: 50%;
+    transform: rotate(45deg);
+    content: '';
+}
+
+.pattern_15::before {
+    top: 5px;
+    border-right-color: transparent;
+}
+
+.pattern_15::after {
+    bottom: 5px;
+    border-left-color: transparent;
+}
+
+/* ---------------------------------------- */
+
+.pattern_ {
+
 }

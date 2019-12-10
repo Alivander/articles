@@ -1,11 +1,12 @@
 :root {
-    --fill: darkturquoise;
+    --fill-color: darkturquoise;
+    --minor-color: #ddd;
 }
 
 html {
     margin: 0;
     padding: 0;
-    background-color: #ddd;
+    background-color: var(--minor-color);
     font-family: sans-serif;
 }
 
@@ -13,27 +14,20 @@ body {
     max-width: 860px;
     margin: 0 auto;
     padding: 30px;
-    box-sizing: border-box;
     background-color: white;
     box-shadow: 0 0 10px 0 #aaa;
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-*::before, *::after {
-    display: block;
 }
 
 .table {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .cell {
-    width: 200px;
+    width: 150px;
     margin-bottom: 20px;
+    border-bottom: 1px solid var(--minor-color)
 }
 
 .cell__title {
@@ -45,8 +39,8 @@ body {
 .field {
     display: flex;
     justify-content: center;
-    align-items: center;s
+    align-items: center;
     flex-shrink: 0;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
