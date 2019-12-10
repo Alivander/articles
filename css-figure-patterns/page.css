@@ -1,0 +1,38 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 0 10px 0 #aaa;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+*::before, *::after {
+    display: block;
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;s
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+}
