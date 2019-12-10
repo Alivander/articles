@@ -1,12 +1,15 @@
+:root {
+    --fill: darkturquoise;
+}
+
 html {
     margin: 0;
     padding: 0;
     background-color: #ddd;
+    font-family: sans-serif;
 }
 
 body {
-    display: flex;
-    flex-wrap: wrap;
     max-width: 860px;
     margin: 0 auto;
     padding: 30px;
@@ -29,6 +32,17 @@ body {
 }
 
 .cell {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.cell__title {
+    margin-top: 0;
+    color: grey;
+    text-align: center;
+}
+
+.field {
     display: flex;
     justify-content: center;
     align-items: center;s

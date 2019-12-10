@@ -1,8 +1,18 @@
-// TODO
-// Adds css variables for colors
-
 .pattern_1 {
     width: 100px;
     height: 100px;
-    background-color: lightgrey;
+    background-color: var(--fill);
+}
+
+.pattern_2 {
+    width: 120px;
+    height: 60px;
+    background-color: var(--fill);
+}
+
+.pattern_3 {
+    width: 60px;
+    height: 60px;
+    background-color: var(--fill);
+    transform: rotate(45deg);
 }
