@@ -1,4 +1,4 @@
-const COUNT_PATTERNS = 30;
+const COUNT_PATTERNS = 100;
 
 const table = document.querySelector('.table');
 const template = document.querySelector('template').content;
